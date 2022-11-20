@@ -7,5 +7,3 @@ library(ipred)
 
 #Getting Started
 getwd()
-sba_loans <- read.csv("SBAcase.11.13.17.csv")
-sba_loans_df <- data.frame(sba_loans)
