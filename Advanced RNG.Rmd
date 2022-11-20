@@ -1,0 +1,41 @@
+---
+title: Data Generator
+output: html_notebook
+---
+This little R Notebok serves the purpose of simplifying the process of data generation.
+
+The whole point is to just build functions that take in parameters like types of distributions and according parametrization of the specific distributions to generate a random sample for simulation and theoretical analysis.
+
+Specifically, the following hyperparameters are to be considered
+
+- Type of distribution:
+  - Normal
+  - Gamma
+  - T-Student
+  - Chi2
+- Parametrisation:
+  - Mean
+  - Variance
+- Upper and lower bound
+
+
+```{r}
+
+# Simple Function that generates some uniform RNs within a lower and upper bound
+# Additionally performing a stock plot of the data
+# Generated variable In global environment for further use
+
+
+UnG <- function(Number,Lower,Upper) {
+
+  Raw_data = runif(Number,Lower,Upper)
+  Generated <<- as.array(Raw_data)
+  hist(Generated)
+}
+```
+
+
+```{r}
+# Example
+UnG(1000,1,10)
+```
