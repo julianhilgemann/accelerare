@@ -1,9 +1,1 @@
-# Packages used
-
-library(rpart)
-library(rpart.plot)
-library(Metrics)
-library(ipred)
-
-#Getting Started
 getwd()
