@@ -1,2 +1,12 @@
+# Packages used
+
+library(rpart)
+library(rpart.plot)
+library(Metrics)
+library(ipred)
+
 #Getting Started
+# Get working directory
 getwd()
+sba_loans <- read.csv("SBAcase.11.13.17.csv")
+sba_loans_df <- data.frame(sba_loans)
