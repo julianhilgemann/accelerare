@@ -1,3 +1,1 @@
-#Getting Started
-#Setting up everything
 getwd()
